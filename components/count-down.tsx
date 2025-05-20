@@ -92,20 +92,15 @@ export default function CountDown() {
 
       {/* Input and set button container */}
       <div className="flex items-center mb-6">
-        <input
+        <Input
           type="number"
           id="duration"
           placeholder="Enter duration in seconds"
           value={duration}
           onChange={handleDurationChange}
-          className="flex-1 mr-4 rounded-md border-2 border-gray-400 dark:border-gray-600 dark:bg-gray-700 dark:text-gray-200 p-2"
-        />
-        <button
-          onClick={handleSetDuration}
-          className="text-gray-800 dark:text-gray-200 border rounded-md px-4 py-2"
-        >
-          Set
-        </button>
+          className="flex-1 mr-4"
+          />
+        <Button onClick={handleSetDuration}>Set</Button>
       </div>
 
       {/* Display the formatted time left */}
